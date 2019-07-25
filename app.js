@@ -1,6 +1,7 @@
 const addForm = document.querySelector("#add");
 const list = document.querySelector(".to-dos");
 const search = document.querySelector(".search input");
+const searchForm = document.querySelector(".search")
 
 let arrayTodo = [];
 
@@ -53,7 +54,7 @@ const filterTodos = term => {
 
 };
 
-search.addEventListener('submit', e => {
+searchForm.addEventListener('submit', e => {
     e.preventDefault();
 });
 
