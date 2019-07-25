@@ -1,0 +1,141 @@
+/* Reset */
+
+:root {
+    --fondo-color: #FAFAFA;
+    --borde-color: #add;
+    --utility-color: #d3d3d3;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Main Styling */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7rem;
+}
+
+h1,
+h2,
+h3 {
+    padding-bottom: 1.8rem;
+}
+
+.wrapper {
+    background: url(./img/papel5.jpg) no-repeat center center/cover;
+    min-height: 100vh;
+    padding: 3.8rem;
+}
+
+
+/* Container */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 400px;
+    padding: 1.5rem;
+    background: var(--fondo-color);
+    border-radius: 5px;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    margin-bottom: .625rem;
+    padding: .625rem 1.25rem;
+    background: var(--fondo-color);
+}
+
+.text-primary {
+    color: #5c6bc0;
+}
+
+
+/* Search bar */
+
+.search .search-bar {
+    border-radius: 20px;
+    border: var(--utility-color) 2px solid;
+    transition-property: border-color;
+    transition-duration: 1s;
+}
+
+.search .search-bar:active,
+.search .search-bar:focus {
+    outline: none;
+    border-color: var(--borde-color);
+}
+
+
+/* List */
+
+.to-dos li {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+    list-style: none;
+    border-bottom: var(--utility-color) solid 1px;
+    text-align: left;
+    padding: .625rem 1.25rem;
+    text-decoration: none !important;
+    color: #000000 !important;
+}
+
+.to-dos li span {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.to-dos li i {
+    display: flex;
+    align-items: center;
+    color: #777;
+}
+
+.tachado {
+    color: var(--utility-color);
+    text-decoration: line-through;
+}
+
+
+/* Delete */
+
+.delete {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.delete:hover {
+    transform: scale(1.3)
+}
+
+
+/* Add To-do's */
+
+#add .add-new {
+    border: none;
+    border-bottom: var(--utility-color) solid 2px;
+    height: 2.5rem;
+    transition-property: border-color;
+    transition-duration: 1s;
+}
+
+#add .add-new:active,
+#add .add-new:focus {
+    outline: none;
+    border-color: var(--borde-color);
+}
+
+
+/* Filtered */
+
+.filtered {
+    display: none;
+}
