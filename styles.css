@@ -27,6 +27,8 @@ h3 {
 }
 
 .wrapper {
+    display: flex;
+    flex-direction: column;
     background: url(./img/papel5.jpg) no-repeat center center/cover;
     min-height: 100vh;
     padding: 3.8rem;
@@ -138,4 +140,13 @@ input {
 
 .filtered {
     display: none;
+}
+
+/* Creditos*/
+
+.creditos{
+    align-content: flex-end;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
 }
